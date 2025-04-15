@@ -14,8 +14,23 @@ const router= createBrowserRouter([
       {
      path:'/',
      element:<Home/>
-    }
-
+    },
+     {
+      path:'/categories',
+      element:<Categories/>
+     },
+     {
+      path:'/search',
+      element:<Search/>
+     },
+     {
+      path:'/singlegif',
+      element:<Singlegif/>
+     },
+     {
+      path:'/favourites',
+      element:<Favourites/>
+     }
     ]
   }
 ])
