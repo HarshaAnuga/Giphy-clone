@@ -16,16 +16,16 @@ const router= createBrowserRouter([
      element:<Home/>
     },
      {
-      path:'/categories',
+      path:'/:categories',
       element:<Categories/>
      },
      {
-      path:'/search',
-      element:<Search/>
+      path:'/:search/:query',
+      element:<SearchPage/>
      },
      {
-      path:'/singlegif',
-      element:<Singlegif/>
+      path:'/:type/:slug',
+      element:<Gifpage/>
      },
      {
       path:'/favourites',
