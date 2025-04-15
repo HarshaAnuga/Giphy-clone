@@ -12,23 +12,23 @@ const router= createBrowserRouter([
     element:<Applayout/>,
     children:[
       {
-     path:'/',
+     path:"/",
      element:<Home/>
     },
      {
-      path:'/:categories',
+      path:"/:categories",
       element:<Categories/>
      },
      {
-      path:'/:search/:query',
+      path:"/:search/:query",
       element:<SearchPage/>
      },
      {
-      path:'/:type/:slug',
+      path:"/:type/:slug",
       element:<Gifpage/>
      },
      {
-      path:'/favourites',
+      path:"/favourites",
       element:<Favourites/>
      }
     ]
