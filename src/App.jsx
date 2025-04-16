@@ -1,5 +1,12 @@
 
-import { createBrowserRouter } from 'react-router'
+import { createBrowserRouter } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
+import Applayout from './layout/app.layout';
+import Home from './pages/home';
+import Categories from './pages/categories';
+import SearchPage from './pages/search';
+import Gifpage from './pages/single.gif';
+import Favourites from './pages/favourites';
 import './App.css'
 //homepage
 //categories
@@ -36,8 +43,8 @@ const router= createBrowserRouter([
 ])
 function App() {
  
-  return <div>subsrcribe to roadsidecoder</div>
+  return <RouterProvider router={router}/>
   
 }
 
-export default App
+export default App;
