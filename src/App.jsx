@@ -5,7 +5,7 @@ import Applayout from './layout/app.layout';
 import Home from './pages/home';
 import Categories from './pages/categories';
 import SearchPage from './pages/search';
-import Gifpage from './pages/single.gif';
+import Gifpage from './pages/singlegif';
 import Favourites from './pages/favourites';
 import './App.css'
 //homepage
@@ -35,8 +35,12 @@ const router= createBrowserRouter([
       element:<Gifpage/>
      },
      {
-      path:"/favourites",
+      path:"/:favourites",
       element:<Favourites/>
+     },
+     {
+      path:"/:singlegif",
+      element:<Gifpage/>
      }
     ]
   }
